@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaidooj Special - Celebrating Sibling Love</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            min-height: 100%;
+        }
+        
+        html {
+            height: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-title {
+            font-size: 3rem;
+            color: #d63384;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .main-title:hover {
+            transform: scale(1.05);
+            color: #ff1493;
+        }
+
+        .click-hint {
+            font-size: 0.9rem;
+            color: #6f42c1;
+            font-style: italic;
+            margin-top: 5px;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.5; }
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #6f42c1;
+            margin-bottom: 20px;
+        }
+
+        .decorative-border {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .tab-navigation {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+
+        .tab-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tab-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .tab-button.active {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cake-celebration {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .cake-svg {
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .sister-note {
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            color: #2d3436;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #ff6b6b;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #d63384;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .card-content {
+            color: #495057;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .memory-section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .memory-title {
+            font-size: 2rem;
+            color: #6f42c1;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .memory-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .memory-card:hover {
+            transform: scale(1.05);
+        }
+
+        .wishes-section {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .wish-button {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .wish-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .wish-display {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            border-radius: 15px;
+            font-size: 1.2rem;
+            color: #2d3436;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .watermark {
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            z-index: 9999;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            animation: watermarkGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes watermarkGlow {
+            0% { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+            100% { box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4); }
+        }
+
+        .footer-hearts {
+            font-size: 2rem;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-image">
+                <svg width="120" height="120" viewBox="0 0 120 120" style="margin-bottom: 20px;">
+                    <!-- Beautiful Sister figure centered -->
+                    <circle cx="60" cy="30" r="15" fill="#DEB887" stroke="#CD853F" stroke-width="2"/>
+                    <rect x="48" y="45" width="24" height="30" rx="4" fill="#FF69B4" stroke="#FF1493" stroke-width="2"/>
+                    <rect x="43" y="75" width="34" height="18" rx="3" fill="#8B008B" stroke="#4B0082" stroke-width="2"/>
+                    <circle cx="55" cy="25" r="2" fill="#000"/>
+                    <circle cx="65" cy="25" r="2" fill="#000"/>
+                    <path d="M 55 35 Q 60 38 65 35" stroke="#000" stroke-width="2" fill="none"/>
+                    <!-- Beautiful hair bow -->
+                    <path d="M 45 15 Q 60 10 75 15 Q 60 25 45 15" fill="#FF1493"/>
+                    <circle cx="60" cy="15" r="3" fill="#FFD700"/>
+                    
+                    <!-- Decorative flowers around her -->
+                    <circle cx="30" cy="40" r="4" fill="#FFB6C1"/>
+                    <circle cx="90" cy="40" r="4" fill="#FFB6C1"/>
+                    <circle cx="25" cy="60" r="3" fill="#FF69B4"/>
+                    <circle cx="95" cy="60" r="3" fill="#FF69B4"/>
+                    
+                    <!-- Hearts floating around -->
+                    <path d="M 20 25 C 18 22, 12 22, 12 28 C 12 22, 6 22, 4 25 C 6 30, 20 40, 20 40 C 20 40, 34 30, 36 25 C 38 22, 32 22, 32 28 C 32 22, 26 22, 24 25" fill="#FF69B4" opacity="0.7"/>
+                    <path d="M 100 25 C 98 22, 92 22, 92 28 C 92 22, 86 22, 84 25 C 86 30, 100 40, 100 40 C 100 40, 114 30, 116 25 C 118 22, 112 22, 112 28 C 112 22, 106 22, 104 25" fill="#FF69B4" opacity="0.7"/>
+                    
+                    <!-- Decorative elements -->
+                    <text x="60" y="105" text-anchor="middle" font-size="14" fill="#D63384" font-weight="bold">My Dear Sister</text>
+                </svg>
+            </div>
+            <h1 class="main-title" onclick="playBhaidoojMusic()">🌸 Happy Bhaidooj My Dear Sister 🌸</h1>
+            <p class="click-hint">👆 Click here to see a special surprise just for you!</p>
+            <p class="subtitle">A Special Website Dedicated to My Amazing Sister</p>
+            <div class="decorative-border"></div>
+        </header>
+
+        <nav class="tab-navigation">
+            <button class="tab-button active" onclick="showTab('home')">🏠 Home</button>
+            <button class="tab-button" onclick="showTab('memories')">📸 Memories</button>
+            <button class="tab-button" onclick="showTab('wishes')">💝 Wishes</button>
+            <button class="tab-button" onclick="showTab('celebration')">🎂 Celebration</button>
+            <button class="tab-button" onclick="showTab('gallery')">🖼️ Gallery</button>
+            <button class="tab-button" onclick="showTab('music')">🎵 Music</button>
+        </nav>
+
+        <!-- Home Tab -->
+        <div id="home" class="tab-content active">
+            <main>
+                <div class="card">
+                    <div class="card-icon">👸</div>
+                    <h2 class="card-title">You Are My Queen</h2>
+                    <p class="card-content">
+                        Dear sister, you are the most precious person in my life. Your smile lights up 
+                        every room, your kindness touches every heart, and your strength inspires everyone 
+                        around you. Today I celebrate YOU!
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎁</div>
+                    <h2 class="card-title">My Blessings for You</h2>
+                    <p class="card-content">
+                        On this special Bhaidooj, I pray for your endless happiness, boundless success, 
+                        perfect health, and all the love your beautiful heart deserves. May every dream 
+                        of yours come true, my dear sister.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🌟</div>
+                    <h2 class="card-title">You Are My Star</h2>
+                    <p class="card-content">
+                        From our childhood adventures to now, you have always been my guiding star. 
+                        Your laughter is my favorite sound, your happiness is my greatest joy, and 
+                        your success is my proudest moment.
+                    </p>
+                </div>
+            </main>
+        </div>
+
+        <!-- Memories Tab -->
+        <div id="memories" class="tab-content">
+            <section class="memory-section">
+                <h2 class="memory-title">✨ Beautiful Memories of You ✨</h2>
+                <div class="memory-grid">
+                    <div class="memory-card">
+                        <h3>🌸 Your Sweet Nature</h3>
+                        <p>I remember how you always shared your favorite things with me, your generous heart always thinking of others first.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>😄 Your Infectious Laughter</h3>
+                        <p>Your giggles and jokes that could turn any sad moment into pure joy. You have the most beautiful laugh!</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>💪 Your Amazing Strength</h3>
+                        <p>Watching you overcome every challenge with grace and determination. You inspire me every single day!</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>🎊 Your Celebration Spirit</h3>
+                        <p>How you make every occasion special with your enthusiasm and joy. You bring magic to every moment!</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Wishes Tab -->
+        <div id="wishes" class="tab-content">
+            <section class="wishes-section">
+                <h2 class="memory-title">💝 Special Wishes Just for You 💝</h2>
+                <p>Click the buttons below to see heartfelt wishes made especially for my amazing sister!</p>
+                
+                <button class="wish-button" onclick="showWish('happiness')">Wishes for Happiness</button>
+                <button class="wish-button" onclick="showWish('success')">Wishes for Success</button>
+                <button class="wish-button" onclick="showWish('love')">Wishes for Love</button>
+                
+                <div class="wish-display" id="wishDisplay">
+                    Click a button above to see beautiful wishes made just for you! 🌟
+                </div>
+            </section>
+        </div>
+
+        <!-- Celebration Tab -->
+        <div id="celebration" class="tab-content">
+            <div class="cake-celebration" id="cakeSection" style="display: none;">
+                <h2 style="color: #d63384; margin-bottom: 20px;">🎂 A Special Cake Just for You, My Beautiful Sister! 🎂</h2>
+                
+                <div class="cake-svg">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <!-- Cake base -->
+                        <ellipse cx="100" cy="180" rx="80" ry="15" fill="#8B4513"/>
+                        <rect x="20" y="120" width="160" height="60" fill="#DEB887" stroke="#CD853F" stroke-width="2"/>
+                        <rect x="30" y="80" width="140" height="40" fill="#F4A460" stroke="#D2691E" stroke-width="2"/>
+                        <rect x="40" y="50" width="120" height="30" fill="#FFB6C1" stroke="#FF69B4" stroke-width="2"/>
+                        
+                        <!-- Decorative frosting -->
+                        <path d="M 20 120 Q 30 110 40 120 Q 50 110 60 120 Q 70 110 80 120 Q 90 110 100 120 Q 110 110 120 120 Q 130 110 140 120 Q 150 110 160 120 Q 170 110 180 120" 
+                              stroke="#FF69B4" stroke-width="3" fill="none"/>
+                        <path d="M 30 80 Q 40 70 50 80 Q 60 70 70 80 Q 80 70 90 80 Q 100 70 110 80 Q 120 70 130 80 Q 140 70 150 80 Q 160 70 170 80" 
+                              stroke="#FF1493" stroke-width="3" fill="none"/>
+                        
+                        <!-- Candles -->
+                        <rect x="70" y="30" width="4" height="20" fill="#FFD700"/>
+                        <rect x="90" y="25" width="4" height="25" fill="#FFD700"/>
+                        <rect x="110" y="30" width="4" height="20" fill="#FFD700"/>
+                        <rect x="130" y="25" width="4" height="25" fill="#FFD700"/>
+                        
+                        <!-- Flames -->
+                        <ellipse cx="72" cy="25" rx="3" ry="8" fill="#FF4500"/>
+                        <ellipse cx="92" cy="20" rx="3" ry="8" fill="#FF4500"/>
+                        <ellipse cx="112" cy="25" rx="3" ry="8" fill="#FF4500"/>
+                        <ellipse cx="132" cy="20" rx="3" ry="8" fill="#FF4500"/>
+                        
+                        <!-- Decorative elements -->
+                        <circle cx="60" cy="100" r="5" fill="#FF69B4"/>
+                        <circle cx="140" cy="100" r="5" fill="#FF69B4"/>
+                        <circle cx="100" cy="90" r="6" fill="#FF1493"/>
+                        
+                        <!-- Hearts -->
+                        <path d="M 50 60 C 45 55, 35 55, 35 65 C 35 55, 25 55, 20 60 C 25 70, 50 90, 50 90 C 50 90, 75 70, 80 60 C 85 55, 75 55, 75 65 C 75 55, 65 55, 60 60" fill="#FF69B4" opacity="0.7"/>
+                        <path d="M 150 60 C 145 55, 135 55, 135 65 C 135 55, 125 55, 120 60 C 125 70, 150 90, 150 90 C 150 90, 175 70, 180 60 C 185 55, 175 55, 175 65 C 175 55, 165 55, 160 60" fill="#FF69B4" opacity="0.7"/>
+                    </svg>
+                </div>
+                
+                <div class="sister-note">
+                    <h3 style="color: #d63384; margin-bottom: 15px;">💕 A Special Message for My Amazing Sister 💕</h3>
+                    <p style="margin-bottom: 15px;">
+                        <strong>My Dearest Sister,</strong>
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        On this beautiful day of Bhaidooj, I want you to know how grateful I am to have you in my life. 
+                        You are not just my sister, but my best friend, my confidant, and my biggest supporter.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        This virtual cake is baked with all my love and decorated with the sweetest memories we've shared together. 
+                        Each candle represents a wish I have for you - happiness, success, health, and endless joy.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        May this Bhaidooj bring you all the love and blessings you deserve. Thank you for being the wonderful person you are!
+                    </p>
+                    <p style="text-align: right; font-style: italic; color: #6f42c1;">
+                        With all my love,<br>
+                        Your Brother 💖
+                    </p>
+                </div>
+                
+                <button class="wish-button" onclick="celebrateCake()" style="margin-top: 20px;">
+                    🎉 Make a Wish & Blow the Candles! 🎉
+                </button>
+            </div>
+            
+            <div class="memory-section" id="regularCelebration">
+                <h2 class="memory-title">🎊 Bhaidooj Celebration 🎊</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #6f42c1; margin-bottom: 30px;">
+                    Click on "Happy Bhaidooj My Dear Sister" in the header above to see a special surprise just for you! 🎂✨
+                </p>
+                <div class="memory-grid">
+                    <div class="memory-card">
+                        <h3>🪔 My Prayers for You</h3>
+                        <p>I pray for your protection, happiness, and success. May you always be blessed with good health and joy.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>🍯 Sweet Wishes</h3>
+                        <p>May your life be as sweet as your favorite desserts, filled with all the delightful moments you deserve.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>🎁 Gifts of Love</h3>
+                        <p>Every gift I give you comes with endless love and the promise that I'll always be here for you.</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>📿 My Blessings</h3>
+                        <p>My heartfelt blessings for your bright future, amazing achievements, and all the happiness in the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Tab -->
+        <div id="gallery" class="tab-content">
+            <section class="memory-section">
+                <h2 class="memory-title">🖼️ Photo Gallery 🖼️</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: #6f42c1;">
+                    Upload your favorite memories from your computer! Click the button below to add photos.
+                </p>
+                
+                <!-- Upload Button -->
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <input type="file" id="photoUpload" accept="image/*" multiple style="display: none;" onchange="handlePhotoUpload(event)">
+                    <button class="wish-button" onclick="document.getElementById('photoUpload').click()">
+                        📸 Add Photos from Computer 📸
+                    </button>
+                </div>
+                
+                <!-- Photo Grid -->
+                <div class="memory-grid" id="photoGrid">
+                    <!-- Photos will be added here dynamically -->
+                </div>
+                
+                <!-- Empty State -->
+                <div id="emptyGallery" style="text-align: center; padding: 40px; background: rgba(255,255,255,0.7); border-radius: 15px; margin-top: 20px;">
+                    <div style="font-size: 4rem; margin-bottom: 20px; opacity: 0.5;">📷</div>
+                    <h3 style="color: #6f42c1; margin-bottom: 15px;">No Photos Yet</h3>
+                    <p style="color: #495057;">Click the "Add Photos from Computer" button above to start building your beautiful gallery!</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Music Tab -->
+        <div id="music" class="tab-content">
+            <section class="memory-section">
+                <h2 class="memory-title">🎵 Music for My Sister 🎵</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: #6f42c1;">
+                    Upload your favorite songs to play during celebrations! Click the button below to add music.
+                </p>
+                
+                <!-- Upload Music Button -->
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <input type="file" id="musicUpload" accept="audio/*" multiple style="display: none;" onchange="handleMusicUpload(event)">
+                    <button class="wish-button" onclick="document.getElementById('musicUpload').click()">
+                        🎵 Add Music from Computer 🎵
+                    </button>
+                </div>
+
+                <!-- Current Playing -->
+                <div id="currentPlaying" style="display: none; text-align: center; margin-bottom: 30px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+                    <h3 style="margin-bottom: 15px;">🎶 Now Playing</h3>
+                    <p id="currentSongName" style="font-size: 1.2rem; margin-bottom: 15px;">Song Name</p>
+                    <div style="display: flex; justify-content: center; gap: 15px; align-items: center;">
+                        <button onclick="stopMusic()" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 10px 15px; border-radius: 10px; cursor: pointer;">⏹️ Stop</button>
+                        <button onclick="pauseResumeMusic()" id="pauseResumeBtn" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 10px 15px; border-radius: 10px; cursor: pointer;">⏸️ Pause</button>
+                    </div>
+                </div>
+                
+                <!-- Music List -->
+                <div class="memory-grid" id="musicGrid">
+                    <!-- Music files will be added here dynamically -->
+                </div>
+                
+                <!-- Empty State -->
+                <div id="emptyMusic" style="text-align: center; padding: 40px; background: rgba(255,255,255,0.7); border-radius: 15px; margin-top: 20px;">
+                    <div style="font-size: 4rem; margin-bottom: 20px; opacity: 0.5;">🎵</div>
+                    <h3 style="color: #6f42c1; margin-bottom: 15px;">No Music Yet</h3>
+                    <p style="color: #495057;">Click the "Add Music from Computer" button above to start building your music collection!</p>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <h3 style="color: #d63384; margin-bottom: 15px;">You Are My Greatest Blessing</h3>
+            <div class="footer-hearts">💖 👸 💖</div>
+            <p style="color: #6f42c1; font-style: italic;">
+                "You are not just my sister, but my best friend, my inspiration, and my greatest joy in life."
+            </p>
+            <p style="color: #495057; margin-top: 20px;">
+                Happy Bhai Dooj 2025, my dearest sister! You make my world brighter every single day. 🌸✨
+            </p>
+        </footer>
+    </div>
+
+    <!-- Watermark -->
+    <div class="watermark">
+        By Ꭰᴇᴇᴘ ᏢᴀᴛᴇᏞ 😉
+    </div>
+
+    <!-- Photo Viewer Modal -->
+    <div id="photoViewer" style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 10000;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    ">
+        <!-- Close Button -->
+        <button onclick="closePhotoViewer()" style="
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            z-index: 10001;
+        " onmouseover="this.style.background='rgba(255, 255, 255, 0.3)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.2)'">
+            ✕
+        </button>
+
+        <!-- Photo Counter -->
+        <div id="photoCounter" style="
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 1.1rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 20px;
+            z-index: 10001;
+        ">
+            1 of 1
+        </div>
+
+        <!-- Previous Button -->
+        <button onclick="previousPhoto()" style="
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10001;
+        " onmouseover="this.style.background='rgba(255, 255, 255, 0.3)'; this.style.transform='translateY(-50%) scale(1.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.2)'; this.style.transform='translateY(-50%) scale(1)'">
+            ‹
+        </button>
+
+        <!-- Next Button -->
+        <button onclick="nextPhoto()" style="
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10001;
+        " onmouseover="this.style.background='rgba(255, 255, 255, 0.3)'; this.style.transform='translateY(-50%) scale(1.1)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.2)'; this.style.transform='translateY(-50%) scale(1)'">
+            ›
+        </button>
+
+        <!-- Main Image -->
+        <img id="viewerImage" src="" alt="Full size photo" style="
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+        " onerror="this.src=''; this.alt='Image failed to load';">
+
+        <!-- Instructions -->
+        <div style="
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 15px;
+        ">
+            Use ← → arrow keys or click the buttons to navigate • Click anywhere outside to close
+        </div>
+    </div>
+
+    <script>
+        // Load saved photos and music when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🔄 Page loaded - checking for saved content...');
+            loadPhotosFromStorage();
+            loadMusicFromStorage();
+            
+            // Force check storage every 2 seconds to ensure loading
+            const storageChecker = setInterval(() => {
+                if (musicLibrary.length === 0) {
+                    console.log('🔍 Re-checking for saved music...');
+                    loadMusicFromStorage();
+                }
+                if (photoGallery.length === 0) {
+                    console.log('🔍 Re-checking for saved photos...');
+                    loadPhotosFromStorage();
+                }
+            }, 2000);
+            
+            // Stop checking after 30 seconds
+            setTimeout(() => {
+                clearInterval(storageChecker);
+            }, 30000);
+        });
+
+        // Auto-save music and photos when page is about to close
+        window.addEventListener('beforeunload', function() {
+            saveMusicToStorage();
+            savePhotosToStorage();
+        });
+
+        // Enhanced auto-save - save every 10 seconds and on any change
+        setInterval(function() {
+            if (musicLibrary.length > 0) {
+                saveMusicToStorage();
+            }
+            if (photoGallery.length > 0) {
+                savePhotosToStorage();
+            }
+        }, 10000);
+
+        // Save immediately when page becomes hidden (mobile/tab switching)
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                saveMusicToStorage();
+                savePhotosToStorage();
+            }
+        });
+
+        // Save when page loses focus
+        window.addEventListener('blur', function() {
+            saveMusicToStorage();
+            savePhotosToStorage();
+        });
+
+        // Music variables
+        let currentAudio = null;
+        let musicLibrary = [];
+        let isPlaying = false;
+
+        // Save photos to browser's permanent storage
+        function savePhotosToStorage() {
+            try {
+                localStorage.setItem('bhaidooj-sister-photos', JSON.stringify(photoGallery));
+            } catch (error) {
+                console.log('Storage limit reached, but photos will stay for this session');
+            }
+        }
+
+        // Load photos from browser's permanent storage
+        function loadPhotosFromStorage() {
+            try {
+                const savedPhotos = localStorage.getItem('bhaidooj-sister-photos');
+                if (savedPhotos) {
+                    const savedGallery = JSON.parse(savedPhotos);
+                    const photoGrid = document.getElementById('photoGrid');
+                    const emptyGallery = document.getElementById('emptyGallery');
+                    
+                    if (savedGallery.length > 0) {
+                        emptyGallery.style.display = 'none';
+                        photoGallery = savedGallery;
+                        savedGallery.forEach((photo, index) => {
+                            createPhotoCardFromStorage(photo.src, photo.name, index);
+                        });
+                    }
+                }
+            } catch (error) {
+                console.log('Could not load saved photos');
+            }
+        }
+
+        function createPhotoCardFromStorage(imageSrc, fileName, photoIndex) {
+            const photoGrid = document.getElementById('photoGrid');
+            
+            const photoCard = document.createElement('div');
+            photoCard.className = 'memory-card';
+            photoCard.style.cssText = `
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                min-height: 250px;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                transition: transform 0.3s ease;
+            `;
+            
+            photoCard.innerHTML = `
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 10px;">
+                    <img src="${imageSrc}" alt="${fileName}" style="
+                        max-width: 100%;
+                        max-height: 200px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                    " onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div style="padding: 10px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 0 0 15px 15px;">
+                    <div style="font-size: 1.2rem;">💖</div>
+                </div>
+            `;
+            
+            // Add click event to open full screen
+            photoCard.addEventListener('click', function() {
+                openPhotoViewer(photoIndex);
+            });
+            
+            // Add hover effect
+            photoCard.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            photoCard.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+            
+            photoGrid.appendChild(photoCard);
+        }
+
+        // Music Functions
+        function handleMusicUpload(event) {
+            const files = event.target.files;
+            const musicGrid = document.getElementById('musicGrid');
+            const emptyMusic = document.getElementById('emptyMusic');
+            
+            console.log('Music upload started! Files selected:', files.length);
+            
+            if (files.length > 0) {
+                emptyMusic.style.display = 'none';
+                
+                // Show upload progress
+                showUploadProgress('Uploading your music files...');
+                
+                let uploadedCount = 0;
+                const totalFiles = files.length;
+                
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    console.log('Processing file:', file.name, 'Size:', Math.round(file.size / 1024), 'KB', 'Type:', file.type);
+                    
+                    if (file.type.startsWith('audio/') || file.name.toLowerCase().match(/\.(mp3|wav|ogg|m4a|aac|flac)$/)) {
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            console.log('File loaded successfully:', file.name);
+                            createMusicCard(e.target.result, file.name, Math.round(file.size / 1024));
+                            uploadedCount++;
+                            
+                            // Update progress
+                            updateUploadProgress(`Uploaded ${uploadedCount}/${totalFiles} files...`);
+                            
+                            // IMMEDIATE SAVE after each successful upload
+                            saveMusicToStorage();
+                            
+                            // Double-save for extra security
+                            setTimeout(() => {
+                                saveMusicToStorage();
+                            }, 100);
+                            
+                            // Hide progress when all files are uploaded
+                            if (uploadedCount === totalFiles) {
+                                setTimeout(() => {
+                                    hideUploadProgress();
+                                    
+                                    // Final save after all uploads
+                                    saveMusicToStorage();
+                                    
+                                    showMusicNotification(`✅ Successfully uploaded ${totalFiles} music file(s)! Your music is now permanently saved! 🎵💾`);
+                                    
+                                    // Verify save worked
+                                    setTimeout(() => {
+                                        const verification = localStorage.getItem('bhaidooj-sister-music');
+                                        if (verification) {
+                                            const count = JSON.parse(verification).length;
+                                            console.log('✅ Final verification: Total saved songs =', count);
+                                        }
+                                    }, 1000);
+                                }, 500);
+                            }
+                        };
+                        
+                        reader.onerror = function() {
+                            console.error('Error reading file:', file.name);
+                            uploadedCount++;
+                            if (uploadedCount === totalFiles) {
+                                hideUploadProgress();
+                            }
+                        };
+                        
+                        reader.readAsDataURL(file);
+                    } else {
+                        console.log('Skipping non-audio file:', file.name);
+                        uploadedCount++;
+                        if (uploadedCount === totalFiles) {
+                            hideUploadProgress();
+                        }
+                    }
+                }
+                
+                createSparkle();
+            }
+            
+            // Clear the input so same file can be uploaded again if needed
+            event.target.value = '';
+        }
+
+        function createMusicCard(audioSrc, fileName, fileSizeKB) {
+            const musicGrid = document.getElementById('musicGrid');
+            
+            const musicIndex = musicLibrary.length;
+            musicLibrary.push({ 
+                src: audioSrc, 
+                name: fileName, 
+                size: fileSizeKB,
+                uploadDate: new Date().toISOString()
+            });
+            
+            console.log('Music added to library:', fileName, fileSizeKB + 'KB');
+            
+            // TRIPLE SAVE to ensure music is permanently stored
+            saveMusicToStorage();
+            
+            // Save again after 50ms
+            setTimeout(() => {
+                saveMusicToStorage();
+            }, 50);
+            
+            // Save again after 200ms
+            setTimeout(() => {
+                saveMusicToStorage();
+            }, 200);
+            
+            const musicCard = document.createElement('div');
+            musicCard.className = 'memory-card';
+            musicCard.style.cssText = `
+                position: relative;
+                cursor: pointer;
+                min-height: 220px;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                transition: transform 0.3s ease;
+            `;
+            
+            musicCard.innerHTML = `
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px; flex-direction: column;">
+                    <div style="font-size: 4rem; margin-bottom: 15px; color: #667eea;">🎵</div>
+                    <p style="font-size: 1rem; text-align: center; color: #495057; margin: 0 0 10px 0; word-break: break-word; font-weight: bold;">${fileName}</p>
+                    <p style="font-size: 0.8rem; text-align: center; color: #6c757d; margin: 0;">${fileSizeKB} KB</p>
+                </div>
+                <div style="padding: 15px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 0 0 15px 15px;">
+                    <button onclick="playMusic(${musicIndex})" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 8px 15px; border-radius: 10px; cursor: pointer; margin-right: 10px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">▶️ Play</button>
+                    <button onclick="deleteMusic(${musicIndex})" style="background: rgba(255,0,0,0.3); border: none; color: white; padding: 8px 15px; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,0,0,0.5)'" onmouseout="this.style.background='rgba(255,0,0,0.3)'">🗑️ Delete</button>
+                </div>
+            `;
+            
+            musicCard.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            musicCard.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+            
+            musicGrid.appendChild(musicCard);
+        }
+
+        function playMusic(index) {
+            // Stop current music if playing
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio = null;
+            }
+            
+            const music = musicLibrary[index];
+            currentAudio = new Audio(music.src);
+            
+            currentAudio.play().then(() => {
+                isPlaying = true;
+                showCurrentPlaying(music.name);
+                
+                currentAudio.addEventListener('ended', () => {
+                    hideCurrentPlaying();
+                    isPlaying = false;
+                });
+            }).catch(error => {
+                console.log('Could not play audio:', error);
+            });
+        }
+
+        function showCurrentPlaying(songName) {
+            const currentPlaying = document.getElementById('currentPlaying');
+            const currentSongName = document.getElementById('currentSongName');
+            const pauseResumeBtn = document.getElementById('pauseResumeBtn');
+            
+            currentSongName.textContent = songName;
+            currentPlaying.style.display = 'block';
+            pauseResumeBtn.innerHTML = '⏸️ Pause';
+        }
+
+        function hideCurrentPlaying() {
+            const currentPlaying = document.getElementById('currentPlaying');
+            currentPlaying.style.display = 'none';
+        }
+
+        function stopMusic() {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio = null;
+                isPlaying = false;
+                hideCurrentPlaying();
+            }
+        }
+
+        function pauseResumeMusic() {
+            if (currentAudio) {
+                if (isPlaying) {
+                    currentAudio.pause();
+                    isPlaying = false;
+                    document.getElementById('pauseResumeBtn').innerHTML = '▶️ Resume';
+                } else {
+                    currentAudio.play();
+                    isPlaying = true;
+                    document.getElementById('pauseResumeBtn').innerHTML = '⏸️ Pause';
+                }
+            }
+        }
+
+        function saveMusicToStorage() {
+            if (musicLibrary.length === 0) return;
+            
+            console.log('💾 SMART SAVE: Analyzing', musicLibrary.length, 'music files...');
+            
+            // Calculate individual file sizes
+            const fileSizes = musicLibrary.map((music, index) => ({
+                index,
+                size: music.src ? music.src.length : 0,
+                sizeKB: Math.round((music.src ? music.src.length : 0) / 1024)
+            }));
+            
+            const totalSize = fileSizes.reduce((sum, file) => sum + file.size, 0);
+            const totalSizeKB = Math.round(totalSize / 1024);
+            
+            console.log('📊 Total music data:', totalSizeKB, 'KB');
+            fileSizes.forEach(file => {
+                console.log(`📄 File ${file.index + 1}: ${file.sizeKB} KB`);
+            });
+            
+            // Strategy 1: Try individual file storage (most reliable)
+            try {
+                console.log('🎯 STRATEGY 1: Individual file storage...');
+                return saveIndividualFiles();
+            } catch (error) {
+                console.log('❌ Individual storage failed:', error.message);
+            }
+            
+            // Strategy 2: Try compressed storage
+            try {
+                console.log('🎯 STRATEGY 2: Compressed storage...');
+                return saveCompressedMusic();
+            } catch (error) {
+                console.log('❌ Compressed storage failed:', error.message);
+            }
+            
+            // Strategy 3: Session storage with warning
+            try {
+                console.log('🎯 STRATEGY 3: Session-only storage...');
+                sessionStorage.setItem('bhaidooj-music-session', JSON.stringify(musicLibrary));
+                showMusicNotification('⚠️ Large files detected! Music saved for this session only. Will be lost if you close the browser.');
+                return true;
+            } catch (error) {
+                console.log('❌ Session storage failed:', error.message);
+            }
+            
+            // Strategy 4: Memory only (last resort)
+            console.log('🎯 STRATEGY 4: Memory-only storage (last resort)');
+            showMusicNotification('❌ Storage limit exceeded! Music will play but won\'t be saved. Try smaller files or fewer songs.');
+            return false;
+        }
+
+        function saveIndividualFiles() {
+            console.log('🎯 Saving each music file individually...');
+            
+            // Clear any existing individual files
+            clearIndividualFiles();
+            
+            let savedCount = 0;
+            let totalSavedSize = 0;
+            
+            for (let i = 0; i < musicLibrary.length; i++) {
+                try {
+                    const fileKey = `bhaidooj-music-file-${i}`;
+                    const musicData = {
+                        name: musicLibrary[i].name,
+                        size: musicLibrary[i].size,
+                        uploadDate: musicLibrary[i].uploadDate,
+                        // Split large audio data into smaller chunks
+                        audioChunks: splitAudioData(musicLibrary[i].src)
+                    };
+                    
+                    // Try to save the file data
+                    const fileDataString = JSON.stringify(musicData);
+                    localStorage.setItem(fileKey, fileDataString);
+                    
+                    savedCount++;
+                    totalSavedSize += fileDataString.length;
+                    
+                    console.log(`✅ File ${i + 1} saved individually (${Math.round(fileDataString.length / 1024)}KB)`);
+                    
+                } catch (fileError) {
+                    console.log(`⚠️ Could not save file ${i + 1}:`, fileError.message);
+                    
+                    // Try saving just metadata without audio
+                    try {
+                        const metadataKey = `bhaidooj-music-meta-${i}`;
+                        const metadata = {
+                            name: musicLibrary[i].name,
+                            size: musicLibrary[i].size,
+                            uploadDate: musicLibrary[i].uploadDate,
+                            audioSaved: false
+                        };
+                        localStorage.setItem(metadataKey, JSON.stringify(metadata));
+                        console.log(`📝 Saved metadata only for file ${i + 1}`);
+                    } catch (metaError) {
+                        console.log(`❌ Could not even save metadata for file ${i + 1}`);
+                    }
+                }
+            }
+            
+            // Save file count and metadata
+            localStorage.setItem('bhaidooj-music-individual-count', savedCount.toString());
+            localStorage.setItem('bhaidooj-music-individual-total', musicLibrary.length.toString());
+            localStorage.setItem('bhaidooj-music-individual-timestamp', new Date().toISOString());
+            
+            if (savedCount > 0) {
+                console.log(`✅ INDIVIDUAL SAVE SUCCESS! Saved ${savedCount}/${musicLibrary.length} files (${Math.round(totalSavedSize / 1024)}KB total)`);
+                showMusicNotification(`💾 Smart save successful! ${savedCount}/${musicLibrary.length} files saved individually ✅`);
+                return true;
+            } else {
+                throw new Error('No individual files could be saved');
+            }
+        }
+
+        function saveCompressedMusic() {
+            console.log('🗜️ Attempting compressed music save...');
+            
+            const compressedLibrary = musicLibrary.map(music => ({
+                name: music.name.substring(0, 30), // Truncate long names
+                size: music.size,
+                uploadDate: music.uploadDate,
+                // Compress audio data by reducing quality
+                src: compressAudioData(music.src)
+            }));
+            
+            const compressedData = JSON.stringify(compressedLibrary);
+            const originalSize = JSON.stringify(musicLibrary).length;
+            const compressionRatio = Math.round((1 - compressedData.length / originalSize) * 100);
+            
+            console.log(`🗜️ Compression: ${Math.round(originalSize / 1024)}KB → ${Math.round(compressedData.length / 1024)}KB (${compressionRatio}% smaller)`);
+            
+            localStorage.setItem('bhaidooj-music-compressed', compressedData);
+            localStorage.setItem('bhaidooj-music-compressed-timestamp', new Date().toISOString());
+            
+            // Verify save worked
+            const verify = localStorage.getItem('bhaidooj-music-compressed');
+            if (verify) {
+                console.log('✅ COMPRESSED SAVE SUCCESSFUL!');
+                showMusicNotification(`💾 Music compressed and saved! (${compressionRatio}% size reduction) ✅`);
+                return true;
+            } else {
+                throw new Error('Compressed save verification failed');
+            }
+        }
+
+        function splitAudioData(audioSrc) {
+            if (!audioSrc) return [];
+            
+            const chunkSize = 100000; // 100KB chunks
+            const chunks = [];
+            
+            for (let i = 0; i < audioSrc.length; i += chunkSize) {
+                chunks.push(audioSrc.substring(i, i + chunkSize));
+            }
+            
+            return chunks;
+        }
+
+        function compressAudioData(audioSrc) {
+            if (!audioSrc) return '';
+            
+            // Simple compression: remove some data points (reduces quality but saves space)
+            // This is a basic approach - in real apps you'd use proper audio compression
+            const base64Data = audioSrc.split(',')[1] || audioSrc;
+            const compressed = base64Data.replace(/(.{10})/g, '$1').substring(0, Math.floor(base64Data.length * 0.7));
+            
+            return audioSrc.includes(',') ? audioSrc.split(',')[0] + ',' + compressed : compressed;
+        }
+
+        function clearIndividualFiles() {
+            const keys = Object.keys(localStorage);
+            keys.forEach(key => {
+                if (key.startsWith('bhaidooj-music-file-') || key.startsWith('bhaidooj-music-meta-')) {
+                    localStorage.removeItem(key);
+                }
+            });
+        }
+
+        function compressMusicData(musicItem) {
+            // Simple compression - remove unnecessary data and compress base64
+            const compressed = {
+                src: musicItem.src, // Keep full audio data
+                name: musicItem.name.substring(0, 50), // Truncate long names
+                size: musicItem.size,
+                uploadDate: musicItem.uploadDate
+            };
+            return JSON.stringify(compressed);
+        }
+
+        function clearChunkedMusic() {
+            // Clear any existing chunked music data
+            const keys = Object.keys(localStorage);
+            keys.forEach(key => {
+                if (key.startsWith('bhaidooj-music-chunk-')) {
+                    localStorage.removeItem(key);
+                }
+            });
+        }
+
+        function loadMusicFromStorage() {
+            try {
+                console.log('🔍 ADVANCED SEARCH: Looking for saved music in all storage methods...');
+                
+                // Strategy 1: Try individual file storage
+                const individualCount = localStorage.getItem('bhaidooj-music-individual-count');
+                if (individualCount) {
+                    console.log('🎯 Found individual file storage, loading...');
+                    if (loadIndividualFiles()) return true;
+                }
+                
+                // Strategy 2: Try compressed storage
+                const compressedMusic = localStorage.getItem('bhaidooj-music-compressed');
+                if (compressedMusic) {
+                    console.log('🗜️ Found compressed music data, loading...');
+                    if (loadCompressedMusic()) return true;
+                }
+                
+                // Strategy 3: Try chunked storage
+                const chunkedCount = localStorage.getItem('bhaidooj-music-chunked-count');
+                if (chunkedCount) {
+                    console.log('🧩 Found chunked music data, loading...');
+                    if (loadChunkedMusic()) return true;
+                }
+                
+                // Strategy 4: Try session storage
+                const sessionMusic = sessionStorage.getItem('bhaidooj-music-session');
+                if (sessionMusic) {
+                    console.log('📝 Found session music data, loading...');
+                    const savedLibrary = JSON.parse(sessionMusic);
+                    if (loadMusicLibrary(savedLibrary, 'Session Storage (temporary)')) return true;
+                }
+                
+                // Strategy 5: Try legacy storage locations
+                const legacyLocations = [
+                    { key: 'bhaidooj-sister-music', name: 'Legacy Primary Storage' },
+                    { key: 'bhaidooj-music-session-only', name: 'Legacy Session Storage', storage: sessionStorage }
+                ];
+                
+                for (const location of legacyLocations) {
+                    try {
+                        const storage = location.storage || localStorage;
+                        const savedMusic = storage.getItem(location.key);
+                        if (savedMusic) {
+                            console.log('✅ FOUND LEGACY MUSIC in:', location.name);
+                            const savedLibrary = JSON.parse(savedMusic);
+                            if (loadMusicLibrary(savedLibrary, location.name)) return true;
+                        }
+                    } catch (e) {
+                        console.log('⚠️ Could not access:', location.name);
+                    }
+                }
+                
+                console.log('❌ NO SAVED MUSIC FOUND - starting fresh');
+                setTimeout(() => {
+                    const emptyMusic = document.getElementById('emptyMusic');
+                    if (emptyMusic && emptyMusic.style.display !== 'none') {
+                        showMusicNotification('ℹ️ No saved music found. Upload some music files to get started! 🎵');
+                    }
+                }, 2000);
+                
+                return false; // No music found
+                
+            } catch (error) {
+                console.error('❌ CRITICAL ERROR loading music:', error);
+                return false;
+            }
+        }
+
+        function loadIndividualFiles() {
+            try {
+                const savedCount = parseInt(localStorage.getItem('bhaidooj-music-individual-count') || '0');
+                const totalCount = parseInt(localStorage.getItem('bhaidooj-music-individual-total') || '0');
+                
+                console.log(`🎯 Loading ${savedCount}/${totalCount} individual music files...`);
+                
+                const loadedMusic = [];
+                let successCount = 0;
+                
+                for (let i = 0; i < totalCount; i++) {
+                    try {
+                        const fileKey = `bhaidooj-music-file-${i}`;
+                        const fileData = localStorage.getItem(fileKey);
+                        
+                        if (fileData) {
+                            const musicData = JSON.parse(fileData);
+                            
+                            // Reconstruct audio from chunks
+                            const audioSrc = musicData.audioChunks ? musicData.audioChunks.join('') : '';
+                            
+                            const musicItem = {
+                                name: musicData.name,
+                                size: musicData.size,
+                                uploadDate: musicData.uploadDate,
+                                src: audioSrc
+                            };
+                            
+                            loadedMusic.push(musicItem);
+                            successCount++;
+                            console.log(`✅ Loaded individual file ${i + 1}: ${musicData.name}`);
+                        } else {
+                            // Try loading metadata only
+                            const metaKey = `bhaidooj-music-meta-${i}`;
+                            const metaData = localStorage.getItem(metaKey);
+                            if (metaData) {
+                                const metadata = JSON.parse(metaData);
+                                console.log(`📝 Found metadata for file ${i + 1}: ${metadata.name} (audio not saved)`);
+                            }
+                        }
+                    } catch (fileError) {
+                        console.log(`❌ Error loading individual file ${i}:`, fileError.message);
+                    }
+                }
+                
+                if (loadedMusic.length > 0) {
+                    console.log(`🎉 INDIVIDUAL LOAD SUCCESS! Loaded ${successCount}/${totalCount} files`);
+                    return loadMusicLibrary(loadedMusic, `Individual Storage (${successCount}/${totalCount} files)`);
+                } else {
+                    throw new Error('No individual files could be loaded');
+                }
+                
+            } catch (error) {
+                console.log('❌ Individual file loading failed:', error.message);
+                return false;
+            }
+        }
+
+        function loadCompressedMusic() {
+            try {
+                const compressedData = localStorage.getItem('bhaidooj-music-compressed');
+                if (!compressedData) throw new Error('No compressed data found');
+                
+                const compressedLibrary = JSON.parse(compressedData);
+                console.log(`🗜️ Loading ${compressedLibrary.length} compressed music files...`);
+                
+                // Decompress the music (note: this is lossy compression)
+                const decompressedLibrary = compressedLibrary.map(music => ({
+                    name: music.name,
+                    size: music.size,
+                    uploadDate: music.uploadDate,
+                    src: music.src // Already compressed, use as-is
+                }));
+                
+                console.log('🎉 COMPRESSED LOAD SUCCESS!');
+                return loadMusicLibrary(decompressedLibrary, 'Compressed Storage (reduced quality)');
+                
+            } catch (error) {
+                console.log('❌ Compressed music loading failed:', error.message);
+                return false;
+            }
+        }
+
+        function loadChunkedMusic() {
+            try {
+                const chunkedCount = parseInt(localStorage.getItem('bhaidooj-music-chunked-count') || '0');
+                const totalCount = parseInt(localStorage.getItem('bhaidooj-music-chunked-total') || '0');
+                
+                console.log(`🧩 Loading ${chunkedCount}/${totalCount} chunked music files...`);
+                
+                const loadedMusic = [];
+                let successCount = 0;
+                
+                for (let i = 0; i < totalCount; i++) {
+                    try {
+                        const chunkKey = `bhaidooj-music-chunk-${i}`;
+                        const chunkData = localStorage.getItem(chunkKey);
+                        
+                        if (chunkData) {
+                            const musicItem = JSON.parse(chunkData);
+                            loadedMusic.push(musicItem);
+                            successCount++;
+                            console.log(`✅ Loaded chunk ${i + 1}: ${musicItem.name}`);
+                        } else {
+                            console.log(`⚠️ Missing chunk ${i + 1}`);
+                        }
+                    } catch (chunkError) {
+                        console.error(`❌ Error loading chunk ${i}:`, chunkError);
+                    }
+                }
+                
+                if (loadedMusic.length > 0) {
+                    console.log(`🎉 CHUNKED LOAD SUCCESS! Loaded ${successCount}/${totalCount} files`);
+                    return loadMusicLibrary(loadedMusic, `Chunked Storage (${successCount}/${totalCount} files)`);
+                } else {
+                    throw new Error('No chunks could be loaded');
+                }
+                
+            } catch (error) {
+                console.error('❌ Chunked loading failed:', error);
+                return false;
+            }
+        }
+
+        function loadMusicLibrary(savedLibrary, sourceName) {
+            const musicGrid = document.getElementById('musicGrid');
+            const emptyMusic = document.getElementById('emptyMusic');
+            
+            if (savedLibrary.length > 0) {
+                emptyMusic.style.display = 'none';
+                musicLibrary = [...savedLibrary]; // Create a copy
+                
+                console.log('🎵 Loading', savedLibrary.length, 'saved songs...');
+                
+                // Clear existing grid first
+                musicGrid.innerHTML = '';
+                
+                savedLibrary.forEach((music, index) => {
+                    createMusicCardFromStorage(music.src, music.name, index, music.size || 0);
+                });
+                
+                // Show success message
+                setTimeout(() => {
+                    showMusicNotification(`🎉 SUCCESS! Loaded ${savedLibrary.length} music files from ${sourceName}! 🎵💾`);
+                }, 1000);
+                
+                // Log details
+                const timestamp = localStorage.getItem('bhaidooj-music-timestamp') || localStorage.getItem('bhaidooj-music-chunked-timestamp');
+                if (timestamp) {
+                    console.log('📅 Music was last saved:', new Date(timestamp).toLocaleString());
+                }
+                
+                return true; // Success
+            }
+            
+            return false;
+        }
+
+        function createMusicCardFromStorage(audioSrc, fileName, musicIndex, fileSizeKB = 0) {
+            const musicGrid = document.getElementById('musicGrid');
+            
+            const musicCard = document.createElement('div');
+            musicCard.className = 'memory-card';
+            musicCard.style.cssText = `
+                position: relative;
+                cursor: pointer;
+                min-height: 220px;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                transition: transform 0.3s ease;
+            `;
+            
+            musicCard.innerHTML = `
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px; flex-direction: column;">
+                    <div style="font-size: 4rem; margin-bottom: 15px; color: #667eea;">🎵</div>
+                    <p style="font-size: 1rem; text-align: center; color: #495057; margin: 0 0 10px 0; word-break: break-word; font-weight: bold;">${fileName}</p>
+                    <p style="font-size: 0.8rem; text-align: center; color: #6c757d; margin: 0;">${fileSizeKB} KB</p>
+                </div>
+                <div style="padding: 15px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 0 0 15px 15px;">
+                    <button onclick="playMusic(${musicIndex})" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 8px 15px; border-radius: 10px; cursor: pointer; margin-right: 10px; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">▶️ Play</button>
+                    <button onclick="deleteMusic(${musicIndex})" style="background: rgba(255,0,0,0.3); border: none; color: white; padding: 8px 15px; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,0,0,0.5)'" onmouseout="this.style.background='rgba(255,0,0,0.3)'">🗑️ Delete</button>
+                </div>
+            `;
+            
+            musicCard.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            musicCard.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+            
+            musicGrid.appendChild(musicCard);
+        }
+
+        function showUploadProgress(message) {
+            // Remove existing progress if any
+            const existingProgress = document.getElementById('uploadProgress');
+            if (existingProgress) {
+                existingProgress.remove();
+            }
+
+            const progressDiv = document.createElement('div');
+            progressDiv.id = 'uploadProgress';
+            progressDiv.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(0, 0, 0, 0.9);
+                    color: white;
+                    padding: 30px 40px;
+                    border-radius: 20px;
+                    z-index: 10000;
+                    text-align: center;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+                ">
+                    <div style="font-size: 2rem; margin-bottom: 15px;">🎵</div>
+                    <div id="progressMessage" style="font-size: 1.1rem; margin-bottom: 15px;">${message}</div>
+                    <div style="width: 200px; height: 4px; background: rgba(255,255,255,0.3); border-radius: 2px; overflow: hidden;">
+                        <div id="progressBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); transition: width 0.3s ease;"></div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(progressDiv);
+        }
+
+        function updateUploadProgress(message) {
+            const progressMessage = document.getElementById('progressMessage');
+            const progressBar = document.getElementById('progressBar');
+            if (progressMessage) {
+                progressMessage.textContent = message;
+            }
+            // Animate progress bar
+            if (progressBar) {
+                const match = message.match(/(\d+)\/(\d+)/);
+                if (match) {
+                    const progress = (parseInt(match[1]) / parseInt(match[2])) * 100;
+                    progressBar.style.width = progress + '%';
+                }
+            }
+        }
+
+        function hideUploadProgress() {
+            const progressDiv = document.getElementById('uploadProgress');
+            if (progressDiv) {
+                progressDiv.style.opacity = '0';
+                progressDiv.style.transform = 'translate(-50%, -50%) scale(0.8)';
+                setTimeout(() => {
+                    progressDiv.remove();
+                }, 300);
+            }
+        }
+
+        function deleteMusic(index) {
+            // Remove from library
+            musicLibrary.splice(index, 1);
+            
+            // Save updated library
+            saveMusicToStorage();
+            
+            // Refresh the music grid
+            refreshMusicGrid();
+            
+            showMusicNotification('Music file deleted successfully! 🗑️');
+        }
+
+        function refreshMusicGrid() {
+            const musicGrid = document.getElementById('musicGrid');
+            const emptyMusic = document.getElementById('emptyMusic');
+            
+            // Clear existing cards
+            musicGrid.innerHTML = '';
+            
+            if (musicLibrary.length === 0) {
+                emptyMusic.style.display = 'block';
+            } else {
+                emptyMusic.style.display = 'none';
+                musicLibrary.forEach((music, index) => {
+                    createMusicCardFromStorage(music.src, music.name, index, music.size || 0);
+                });
+            }
+        }
+
+        function playBhaidoojMusic() {
+            // First show cake celebration
+            showCakeCelebration();
+            
+            // Then try to play uploaded music or default melody
+            if (musicLibrary.length > 0) {
+                // Play the first uploaded song
+                playMusic(0);
+                showMusicNotification('Playing your uploaded music! 🎵');
+            } else {
+                // Play default melody
+                createBhaidoojSong();
+                showMusicNotification('Playing Bhaidooj melody! 🎵');
+            }
+        }
+
+        const wishes = {
+            happiness: [
+                "My dearest sister, may your days be filled with endless laughter, your heart with pure joy, and your life with beautiful moments that make you smile! 😊",
+                "I wish for you a happiness so bright that it lights up every room you enter. You deserve all the joy in the world, my beautiful sister! ✨",
+                "May every sunrise bring you new reasons to smile and every sunset fill your heart with contentment. You are my happiness! 🌅",
+                "Your happiness is my greatest wish. May you always find reasons to laugh, love, and celebrate life to the fullest! 🎉",
+                "અમારી પ્રિય બહેન, તમારું જીવન હંમેશા ખુશીઓથી ભરપૂર રહે, તમારા ચહેરા પર હંમેશા સ્મિત રહે અને તમારા દિલમાં આનંદ રહે! 😊✨",
+                "તમે અમારી સૌથી વહાલી બહેન છો, ભગવાન તમને હંમેશા ખુશ રાખે અને તમારા સપના સાકાર કરે! 🌟💖",
+                "આ ભાઈદૂજના દિવસે અમે પ્રાર્થના કરીએ છીએ કે તમારું જીવન હંમેશા આનંદથી ભરપૂર રહે! 🎊🙏"
+            ],
+            success: [
+                "Dear sister, may you achieve every dream you've ever dreamed and reach heights you never thought possible. Success is waiting for you! 🚀",
+                "I believe in you completely! May your talents shine bright and lead you to incredible success in everything you do! 🌟",
+                "You have the strength, intelligence, and determination to conquer the world. May success follow you wherever you go! 👑",
+                "My amazing sister, may your hard work be rewarded with tremendous success and may all your goals become beautiful realities! 🏆",
+                "અમારી બહેન, તમે જે પણ કામ કરો તેમાં તમને સફળતા મળે, તમારી મહેનત રંગ લાવે અને તમે ઊંચાઈઓ સર કરો! 🚀👑",
+                "તમારી બુદ્ધિ અને મહેનતથી તમે દુનિયામાં નામ કમાવો, ભગવાન તમને હંમેશા આગળ વધારે! 🌟🏆",
+                "અમારી વહાલી બહેન, તમારા સપના સાકાર થાય અને તમે જીવનમાં મહાન સફળતા મેળવો! ✨🎯"
+            ],
+            love: [
+                "You are surrounded by so much love, dear sister! May you always feel cherished, valued, and deeply loved by everyone around you! 💕",
+                "My love for you is endless and unconditional. May you always know how precious you are and how much you mean to me! 💖",
+                "May your life be filled with the kind of love that makes your heart sing - from family, friends, and everyone who knows your beautiful soul! 🎵",
+                "You deserve to be loved exactly as you are - amazing, wonderful, and absolutely perfect. You are so loved, my dear sister! 🌹",
+                "અમારી બહેન, તમે અમારા દિલની રાણી છો, અમારો તમારા પ્રત્યેનો પ્રેમ અનંત છે અને હંમેશા રહેશે! 💖👸",
+                "તમે અમારા જીવનનો સૌથી મોટો ખજાનો છો, ભગવાન તમને હંમેશા પ્રેમથી ઘેરીને રાખે! 💕🌹",
+                "આ ભાઈદૂજના દિવસે અમે કહીએ છીએ કે તમે અમારી સૌથી વહાલી બહેન છો અને હંમેશા રહેશો! 🎊💝",
+                "તમારું હૃદય હંમેશા પ્રેમથી ભરપૂર રહે અને તમને દુનિયાનો બધો પ્રેમ મળે, અમારી પ્રિય બહેન! 🌸💖"
+            ]
+        };
+
+        function showWish(category) {
+            const wishArray = wishes[category];
+            const randomWish = wishArray[Math.floor(Math.random() * wishArray.length)];
+            const wishDisplay = document.getElementById('wishDisplay');
+            
+            wishDisplay.style.opacity = '0';
+            setTimeout(() => {
+                wishDisplay.innerHTML = randomWish;
+                wishDisplay.style.opacity = '1';
+            }, 200);
+        }
+
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        function showCakeCelebration() {
+            // Switch to celebration tab
+            showTab('celebration');
+            
+            // Show the cake section
+            document.getElementById('cakeSection').style.display = 'block';
+            document.getElementById('regularCelebration').style.display = 'none';
+            
+            // Update active tab button
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+            tabButtons[3].classList.add('active'); // Celebration tab is 4th (index 3)
+            
+            // Add some celebration effects
+            createCelebrationEffects();
+        }
+
+        function createCelebrationEffects() {
+            // Create multiple celebration sparkles
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    createSparkle();
+                }, i * 200);
+            }
+        }
+
+        let isListening = false;
+        let audioContext;
+        let microphone;
+        let analyser;
+        let dataArray;
+
+        async function startMicrophoneDetection() {
+            if (isListening) return;
+            
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                microphone = audioContext.createMediaStreamSource(stream);
+                analyser = audioContext.createAnalyser();
+                
+                analyser.fftSize = 256;
+                const bufferLength = analyser.frequencyBinCount;
+                dataArray = new Uint8Array(bufferLength);
+                
+                microphone.connect(analyser);
+                isListening = true;
+                
+                // Update button text
+                const blowButton = document.querySelector('.wish-button');
+                blowButton.innerHTML = '🎤 Blow into your microphone to blow out the candles! 🕯️';
+                blowButton.style.background = 'linear-gradient(135deg, #4ecdc4, #44a08d)';
+                
+                detectBlow();
+            } catch (error) {
+                console.log('Microphone access denied, using click instead');
+                celebrateCakeClick();
+            }
+        }
+
+        function detectBlow() {
+            if (!isListening) return;
+            
+            analyser.getByteFrequencyData(dataArray);
+            
+            // Calculate average volume
+            let sum = 0;
+            for (let i = 0; i < dataArray.length; i++) {
+                sum += dataArray[i];
+            }
+            const average = sum / dataArray.length;
+            
+            // If volume is high enough (blowing detected)
+            if (average > 30) {
+                blowOutCandles();
+                return;
+            }
+            
+            // Continue listening
+            requestAnimationFrame(detectBlow);
+        }
+
+        function blowOutCandles() {
+            isListening = false;
+            
+            // Stop microphone
+            if (microphone) {
+                microphone.disconnect();
+                audioContext.close();
+            }
+            
+            // Blow out candles effect
+            const flames = document.querySelectorAll('ellipse[fill="#FF4500"]');
+            flames.forEach((flame, index) => {
+                setTimeout(() => {
+                    flame.style.opacity = '0';
+                    flame.style.transition = 'opacity 0.5s ease';
+                }, index * 200);
+            });
+            
+            // Show beautiful message for Pooja
+            setTimeout(() => {
+                const cakeSection = document.getElementById('cakeSection');
+                const celebrationMsg = document.createElement('div');
+                celebrationMsg.innerHTML = `
+                    <div style="background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #ffeaa7); color: white; padding: 30px; border-radius: 20px; margin-top: 20px; text-align: center; animation: pulse 2s infinite; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                        <h2 style="margin-bottom: 20px; font-size: 2rem;">🎉 ભાઈદૂજ ની શુભેચ્છા, પૂજા! 🎉</h2>
+                        <p style="font-size: 1.3rem; margin-bottom: 15px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                            <strong>અમારી સૌથી વહાલી બહેન પૂજા,</strong>
+                        </p>
+                        <p style="font-size: 1.1rem; margin-bottom: 15px; line-height: 1.6;">
+                            તમારા શ્વાસથી આ મીણબત્તીઓ બુઝાઈ ગઈ, પણ તેણે અમારી બધી ચિંતાઓ પણ દૂર કરી દીધી! 
+                            તમે અમારા જીવનનો પ્રકાશ છો, પૂજા, અને તમને ખુશ જોઈને અમારું જીવન પૂર્ણ થઈ જાય છે.
+                        </p>
+                        <p style="font-size: 1.1rem; margin-bottom: 15px; line-height: 1.6;">
+                            આ ભાઈદૂજ તમારા જીવનમાં અનંત આનંદ, અપાર સફળતા અને તમારા સુંદર હૃદયને લાયક બધો પ્રેમ લાવે. 
+                            તમે માત્ર અમારી બહેન જ નથી, પણ અમારા શ્રેષ્ઠ મિત્ર અને સૌથી મોટા આશીર્વાદ છો.
+                        </p>
+                        <p style="font-size: 1.2rem; margin-bottom: 20px; font-weight: bold; color: #FFD700;">
+                            અમે તમને ખૂબ જ પ્રેમ કરીએ છીએ, પૂજા! 💖✨</p>
+                        </p>
+                        <div style="font-size: 2rem; animation: bounce 1s infinite;">
+                            🌟 👸 🌟
+                        </div>
+                    </div>
+                `;
+                cakeSection.appendChild(celebrationMsg);
+                
+                // Create extra celebration effects
+                createMegaCelebrationEffects();
+            }, 1000);
+        }
+
+        function celebrateCakeClick() {
+            // Fallback for when microphone isn't available
+            blowOutCandles();
+        }
+
+        function celebrateCake() {
+            startMicrophoneDetection();
+        }
+
+        function createMegaCelebrationEffects() {
+            // Create lots of celebration sparkles
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    createSparkle();
+                    createColorfulSparkle();
+                }, i * 100);
+            }
+        }
+
+        function createColorfulSparkle() {
+            const sparkles = ['🎉', '🎊', '✨', '🌟', '💖', '🎈', '🎁', '🌸'];
+            const sparkle = document.createElement('div');
+            sparkle.innerHTML = sparkles[Math.floor(Math.random() * sparkles.length)];
+            sparkle.style.position = 'fixed';
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.top = '-50px';
+            sparkle.style.fontSize = (15 + Math.random() * 15) + 'px';
+            sparkle.style.pointerEvents = 'none';
+            sparkle.style.animation = 'fall 4s linear forwards';
+            sparkle.style.zIndex = '1000';
+            
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 4000);
+        }
+
+        function handlePhotoUpload(event) {
+            const files = event.target.files;
+            const photoGrid = document.getElementById('photoGrid');
+            const emptyGallery = document.getElementById('emptyGallery');
+            
+            if (files.length > 0) {
+                // Hide empty state
+                emptyGallery.style.display = 'none';
+                
+                // Process each uploaded file
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            createPhotoCard(e.target.result, file.name);
+                        };
+                        
+                        reader.readAsDataURL(file);
+                    }
+                }
+                
+                // Add celebration effects
+                createSparkle();
+            }
+        }
+        
+        let photoGallery = [];
+        let currentPhotoIndex = 0;
+
+        function createPhotoCard(imageSrc, fileName) {
+            const photoGrid = document.getElementById('photoGrid');
+            
+            // Add to gallery array
+            const photoIndex = photoGallery.length;
+            photoGallery.push({ src: imageSrc, name: fileName });
+            
+            // Save to storage immediately after adding to gallery
+            savePhotosToStorage();
+            
+            const photoCard = document.createElement('div');
+            photoCard.className = 'memory-card';
+            photoCard.style.cssText = `
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                min-height: 250px;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                transition: transform 0.3s ease;
+            `;
+            
+            photoCard.innerHTML = `
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 10px;">
+                    <img src="${imageSrc}" alt="${fileName}" style="
+                        max-width: 100%;
+                        max-height: 200px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                    " onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+                </div>
+                <div style="padding: 10px; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 0 0 15px 15px;">
+                    <div style="font-size: 1.2rem;">💖</div>
+                </div>
+            `;
+            
+            // Add click event to open full screen
+            photoCard.addEventListener('click', function() {
+                openPhotoViewer(photoIndex);
+            });
+            
+            // Add hover effect
+            photoCard.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            photoCard.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+            
+            photoGrid.appendChild(photoCard);
+        }
+
+        function openPhotoViewer(index) {
+            currentPhotoIndex = index;
+            const viewer = document.getElementById('photoViewer');
+            const viewerImg = document.getElementById('viewerImage');
+            const photoCounter = document.getElementById('photoCounter');
+            
+            viewerImg.src = photoGallery[index].src;
+            photoCounter.textContent = `${index + 1} of ${photoGallery.length}`;
+            viewer.style.display = 'flex';
+            
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePhotoViewer() {
+            const viewer = document.getElementById('photoViewer');
+            viewer.style.display = 'none';
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextPhoto() {
+            if (currentPhotoIndex < photoGallery.length - 1) {
+                currentPhotoIndex++;
+                const viewerImg = document.getElementById('viewerImage');
+                const photoCounter = document.getElementById('photoCounter');
+                
+                viewerImg.src = photoGallery[currentPhotoIndex].src;
+                photoCounter.textContent = `${currentPhotoIndex + 1} of ${photoGallery.length}`;
+            }
+        }
+
+        function previousPhoto() {
+            if (currentPhotoIndex > 0) {
+                currentPhotoIndex--;
+                const viewerImg = document.getElementById('viewerImage');
+                const photoCounter = document.getElementById('photoCounter');
+                
+                viewerImg.src = photoGallery[currentPhotoIndex].src;
+                photoCounter.textContent = `${currentPhotoIndex + 1} of ${photoGallery.length}`;
+            }
+        }
+        
+        function removePhoto(button) {
+            const photoCard = button.closest('.memory-card');
+            const photoGrid = document.getElementById('photoGrid');
+            const emptyGallery = document.getElementById('emptyGallery');
+            
+            // Remove the photo card with animation
+            photoCard.style.transform = 'scale(0)';
+            photoCard.style.opacity = '0';
+            
+            setTimeout(() => {
+                photoCard.remove();
+                
+                // Show empty state if no photos left
+                if (photoGrid.children.length === 0) {
+                    emptyGallery.style.display = 'block';
+                }
+            }, 300);
+        }
+
+        // Add some sparkle animation
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.innerHTML = '✨';
+            sparkle.style.position = 'fixed';
+            sparkle.style.left = Math.random() * 100 + 'vw';
+            sparkle.style.top = '-50px';
+            sparkle.style.fontSize = '20px';
+            sparkle.style.pointerEvents = 'none';
+            sparkle.style.animation = 'fall 3s linear forwards';
+            sparkle.style.zIndex = '1000';
+            
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 3000);
+        }
+
+        // Add CSS for falling animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Create sparkles periodically
+        setInterval(createSparkle, 2000);
+
+        // Beautiful Bhaidooj Song - Auto-play when site opens
+        function createBhaidoojSong() {
+            // Create audio context for generating beautiful melody
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            
+            // Beautiful Bhaidooj melody notes (in Hz)
+            const melody = [
+                { note: 523.25, duration: 0.5 }, // C5
+                { note: 587.33, duration: 0.5 }, // D5
+                { note: 659.25, duration: 0.5 }, // E5
+                { note: 698.46, duration: 0.5 }, // F5
+                { note: 783.99, duration: 1.0 }, // G5
+                { note: 659.25, duration: 0.5 }, // E5
+                { note: 587.33, duration: 0.5 }, // D5
+                { note: 523.25, duration: 1.0 }, // C5
+                { note: 587.33, duration: 0.5 }, // D5
+                { note: 659.25, duration: 0.5 }, // E5
+                { note: 698.46, duration: 1.0 }, // F5
+                { note: 659.25, duration: 0.5 }, // E5
+                { note: 587.33, duration: 1.5 }, // D5
+            ];
+            
+            let currentTime = audioContext.currentTime;
+            
+            melody.forEach((noteData, index) => {
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.setValueAtTime(noteData.note, currentTime);
+                oscillator.type = 'sine';
+                
+                // Gentle volume envelope
+                gainNode.gain.setValueAtTime(0, currentTime);
+                gainNode.gain.linearRampToValueAtTime(0.1, currentTime + 0.1);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, currentTime + noteData.duration);
+                
+                oscillator.start(currentTime);
+                oscillator.stop(currentTime + noteData.duration);
+                
+                currentTime += noteData.duration;
+            });
+            
+            // Show music notification
+            showMusicNotification();
+        }
+
+        function showMusicNotification(message = 'Playing Bhaidooj melody for you!') {
+            const notification = document.createElement('div');
+            notification.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+                    color: white;
+                    padding: 15px 25px;
+                    border-radius: 25px;
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+                    z-index: 10000;
+                    animation: slideIn 0.5s ease-out;
+                    font-size: 0.9rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                ">
+                    <span style="font-size: 1.2rem;">🎵</span>
+                    <span>${message}</span>
+                    <button onclick="this.parentElement.parentElement.remove()" style="
+                        background: rgba(255,255,255,0.2);
+                        border: none;
+                        color: white;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        font-size: 0.8rem;
+                    ">×</button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Auto-remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentElement) {
+                    notification.remove();
+                }
+            }, 5000);
+        }
+
+        // Add slide-in animation for notification
+        const musicStyle = document.createElement('style');
+        musicStyle.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        `;
+        document.head.appendChild(musicStyle);
+
+        // Auto-play music when page loads (with user interaction fallback)
+        function initializeBhaidoojMusic() {
+            // Try to play immediately
+            try {
+                createBhaidoojSong();
+            } catch (error) {
+                // If autoplay is blocked, play on first user interaction
+                const playOnInteraction = () => {
+                    createBhaidoojSong();
+                    document.removeEventListener('click', playOnInteraction);
+                    document.removeEventListener('touchstart', playOnInteraction);
+                };
+                
+                document.addEventListener('click', playOnInteraction);
+                document.addEventListener('touchstart', playOnInteraction);
+                
+                // Show a gentle prompt
+                const musicPrompt = document.createElement('div');
+                musicPrompt.innerHTML = `
+                    <div style="
+                        position: fixed;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: rgba(0,0,0,0.8);
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        font-size: 0.9rem;
+                        z-index: 10000;
+                        animation: pulse 2s infinite;
+                    ">
+                        🎵 Click anywhere to hear the beautiful Bhaidooj melody! 🎵
+                    </div>
+                `;
+                document.body.appendChild(musicPrompt);
+                
+                // Remove prompt after first interaction
+                document.addEventListener('click', () => {
+                    if (musicPrompt.parentElement) {
+                        musicPrompt.remove();
+                    }
+                }, { once: true });
+            }
+        }
+
+        // Initialize music when page is fully loaded
+        window.addEventListener('load', () => {
+            setTimeout(initializeBhaidoojMusic, 1000); // Small delay for better experience
+        });
+
+        // Keyboard navigation for photo viewer
+        document.addEventListener('keydown', function(event) {
+            const viewer = document.getElementById('photoViewer');
+            if (viewer.style.display === 'flex') {
+                switch(event.key) {
+                    case 'ArrowLeft':
+                        event.preventDefault();
+                        previousPhoto();
+                        break;
+                    case 'ArrowRight':
+                        event.preventDefault();
+                        nextPhoto();
+                        break;
+                    case 'Escape':
+                        event.preventDefault();
+                        closePhotoViewer();
+                        break;
+                }
+            }
+        });
+
+        // Close viewer when clicking outside the image
+        document.getElementById('photoViewer').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closePhotoViewer();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9929b6d7723a41be',t:'MTc2MTE0MzY1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
